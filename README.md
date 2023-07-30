@@ -11,8 +11,8 @@
 ## 3. H2
  - http://localhost:8080/h2/
  - URL jdbc:h2:mem:clients
- - username bala
- - password bala
+ - username admin
+ - password admin
 
 ## 4. Dockerfile
  - Run the published image on docker hub > docker run -p 8080:8080 bala/client:1.0
@@ -22,8 +22,8 @@
 ## 5. Openshift
  - https://rest-api-assurebala-dev.apps.sandbox-m3.1530.p1.openshiftapps.com//swagger-ui.html
 ## Authentication
-	 - user: bala
-	 - password: bala
+	 - user: admin
+	 - password: admin
 
 	 - user: user
 	 - password: user
