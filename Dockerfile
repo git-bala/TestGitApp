@@ -59,7 +59,7 @@ VOLUME [ "/data", "/home/iics/infaagent/apps/process-engine/logs", "/home/iics/i
 # 7080 Process Engine Shutdown Port
 # 7443 Process Engine https port
 # 5432 Process Engine Postgres DB
-EXPOSE 7080 7443 5432 
+EXPOSE 7080 8080 5432 
 
 RUN ls -ltr
 
