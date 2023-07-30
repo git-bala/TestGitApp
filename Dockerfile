@@ -1,11 +1,5 @@
 FROM ubuntu:18.04
-# Read the README.md for more details on the image configuration.
-# You can use different baseline image or linux distribution 
-# but you will likely need to change supporting tools installation and  environment settings
-# Defines where to download agent from (this might be different for your org)
-# This URL will have following pattern for latest IICS Orgs
-# ARG AGENT_URL=https://<pod>.<region>.informaticacloud.com/saas/download/linux64/installer/agent64_install_ng_ext.bin
-# Default is location for na1.dm-us.informaticacloud.com/
+
 ARG AGENT_URL=https://usw1.dm1-us.informaticacloud.com/saas/download/installer/linux64/agent64_install_ng_ext.bin
 
 # Updates Agent Core Ini File <Secure Agent installation directory>/apps/agentcore/conf/infaagent.ini
@@ -66,6 +60,8 @@ VOLUME [ "/data", "/home/iics/infaagent/apps/process-engine/logs", "/home/iics/i
 # 7443 Process Engine https port
 # 5432 Process Engine Postgres DB
 EXPOSE 7080 7443 5432 
+
+RUN ls -ltr
 
 ## this script ensures start of the agent and graceful shutdown by providing proper termination handler to stop main aget core process forked during start
 COPY run_agent.sh .
