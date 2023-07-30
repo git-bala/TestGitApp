@@ -20,7 +20,7 @@
  - Run image in container local > docker run -p 8080:8080 bala/client:1.0
  
 ## 5. Openshift
- - https://rest-api-assurebala-dev.apps.sandbox-m3.1530.p1.openshiftapps.com//swagger-ui.html
+ - https://demo-assurebala-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/swagger-ui.html
 ## Authentication
 	 - user: admin
 	 - password: admin
